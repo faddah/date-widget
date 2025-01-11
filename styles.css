@@ -13,18 +13,22 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: #111;
+	background: url(bg.png);
+	background-size: cover;
+	background-position: center;
 }
 
 .calendar {
 	align-items: center;
-	border-radius: 8px;
 	background: #fff;
+	border-radius: 8px;
+	height: auto;
 	justify-content: center;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
 	width: 200px;
+	-moz-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
 	-webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
 }
 
@@ -56,5 +60,50 @@ body {
 	color: #999;
 	font-size: 20px;
 	font-weight: 500;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+}
+
+.container {
+	margin-bottom: .167em;
+	position: absolute;
+	bottom: 2.5%;
+	left: 37.5%;
+	transform: translate(5%, -5%);
+	width: 40%;
+}
+
+.clock {
+	color: #999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.clock span {
+	display: inline-block;
+	font-size: 1em;
+	positions: absolute;
+	text-align: center;
+}
+
+.clock span::after {
+	color: #555;
+	font-size: 0.5em;
+	position:	relative;
+	bottom: -10px;
+	left: -25px;
+	transform: translateX(-10%);
+}
+
+#hrs::after {
+	content: 'HOURS';
+}
+
+#min::after {
+	content: 'MINUTES';
+}
+
+#sec::after {
+	content: 'SECONDS';
 }
