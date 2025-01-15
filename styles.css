@@ -82,7 +82,7 @@ body {
 
 .clock span {
 	display: inline-block;
-	font-size: 1em;
+	font-size: 1.25em;
 	positions: absolute;
 	text-align: center;
 }
