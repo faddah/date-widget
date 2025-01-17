@@ -2,6 +2,8 @@
 
 # Date Calendar Widget w/ Digital Clock & Google Chrome Extension
 
+## v1.0.1
+
 ## Made in JavaScript
 
 ## Can also be a Google Chrome Browser Extension by using the `manifest.json` file

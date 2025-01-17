@@ -1,6 +1,6 @@
 {
 	"name": "Desk Calendar Chrome Extension",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A Desk Calendar with Current Date & Digital Clock time.",
 		"manifest_version": 3, 
     "action": {
