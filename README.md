@@ -2,7 +2,7 @@
 
 # Date Calendar Widget w/ Digital Clock & Google Chrome Extension
 
-## v1.1.1
+## v1.1.2
 
 ## Made in JavaScript
 
