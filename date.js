@@ -39,8 +39,8 @@ const updateTime = () => {
   let currentTime = Math.floor(Date.now() / 1000);
   const offsetHours = ((new Date().getTimezoneOffset()) / 60);
   hrs.innerHTML = Math.floor(((currentTime / 3600) % 24) < 0 
-    ? (((currentTime / 3600) % 24) + (24 - offsetHours)).toString().padStart(2, '0')
-    : (((currentTime / 3600) % 24) - (offsetHours + 24)).toString().padStart(2, '0'));
+    ? (((currentTime / 3600) % 24) - offsetHours - 16).toString().padStart(2, '0')
+    : (((currentTime / 3600) % 24) - offsetHours).toString().padStart(2, '0'));
   min.innerHTML = Math.floor((currentTime / 60) % 60).toString().padStart(2, '0');
   sec.innerHTML = (currentTime % 60).toString().padStart(2, '0');
 }
